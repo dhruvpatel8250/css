@@ -3,353 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        *{
-            margin: 0;
-            padding: 0%;
-            box-sizing: border-box;
-        }
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        body{
-            background-color: rgb(54, 52, 52);
-        }
-
-        .container{
-            position: relative;
-        }
-
-        .div1{
-            width: 580px;
-            height: 700px;
-            background-color: rgba(103, 31, 31, 0.49);
-           
-        }
-
-        .div2{
-           
-            position: absolute;
-            top: 160px;
-             left: 225px; 
-        }
-
-        .div3{
-            color: rgb(15, 14, 14);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 100px;
-            font-size: 20px;
-            border: 2px solid white;
-            background-color: rgb(110, 240, 240);
-            height: 40px;
-            width: 100%;
-            position: absolute;
-            top: 70px;
-        }
-
-        .fa{
-            background-color: orangered;
-            border-radius: 10px;
-            color: black;
-            font-size: 20px;
-        }
-
-        .div4{
-            display: flex;
-            gap: 10px;
-            position: absolute;
-            top: 80px;
-            right: 60px;
-        }
-
-        .div5{
-            position: absolute;
-            top: 0px;
-            left: 160px;
-        }
-
-        .div6{
-            color: white;
-            font-size: 30px;
-            position: absolute;
-            top: 730px;
-            left: 730px;
-        }
-
-        .container2{
-            position: relative;
-        }
-
-        .div7{
-            position: absolute;
-            top: 50px;
-            right: 0px;
-        }
-
-        .div8{
-            width: 86%;
-            height: 200px;
-            background-image: url(background2.jpg);
-            background-size: 100% 100%;
-            position: absolute;
-             top: 100px;
-        }
-
-        
-        .div9{
-            width: 86%;
-            height: 200px;
-            background-image: url(background2.jpg);
-            background-size: 100% 100%;
-            position: absolute;
-             top: 430px;
-             right: 0px;
-        }
-
-        .div10{
-            width: 200px;
-            height: 200px;
-            background-color: aqua;
-            position: absolute;
-            top: 120px;
-            left: 300px;
-        }
-
-         .div11{
-            width: 200px;
-            height: 200px;
-            background-color: aqua;
-            position: absolute;
-            top: 120px;
-            left: 700px;
-        }
-
-         .div12{
-            width: 200px;
-            height: 200px;
-            background-color: aqua;
-            position: absolute;
-            top: 120px;
-            right: 200px;
-        }
-
-         .div13{
-            width: 200px;
-            height: 200px;
-            background-color: aqua;
-            position: absolute;
-            top: 460px;
-            left: 300px;
-        }
-
-         .div14{
-            width: 200px;
-            height: 200px;
-            background-color: aqua;
-            position: absolute;
-            top: 460px;
-            left: 700px;
-        }
-
-         .div15{
-            width: 200px;
-            height: 200px;
-            background-color: aqua;
-            position: absolute;
-            top: 460px;
-            right: 200px;
-        }
-
-        .p1{
-            flex-direction: column;
-            flex-wrap: wrap;
-            width: 200px;
-            color: white;
-            font-size: 15px;
-            text-align: center;
-        }
-
-        .div16{
-            position: absolute;
-            top: 330px;
-            left: 300px;
-        }
-
-        .div17{
-            position: absolute;
-            top: 330px;
-            left: 700px;
-        }
-
-        .div18{
-            position: absolute;
-            top: 330px;
-            right: 200px;
-        }
-
-        .div19{
-            position: absolute;
-            top: 678px;
-            left: 300px;
-        }
-
-          .div20{
-            position: absolute;
-            top: 678px;
-            left: 700px;
-        }
-
-        .div21{
-            position: absolute;
-            top: 678px;
-            right: 200px;
-        }
-
-        .container3{
-             position: relative;
-        }
-
-        .div22{
-            position: absolute;
-            top: 810px;
-            right: 150px;
-        }
-
-        .div23{
-            background-image: url(background1.jpg);
-            width: 70%;
-            height: 430px;
-            background-size: 100% 100%;
-            position: absolute;
-            top: 890px;
-        }
-
-        .p2{
-            font-size: 60px;
-            flex-direction: column;
-            flex-wrap: wrap;
-            width: 400px;
-            position: absolute;
-            top: 90px;
-            right: 200px;
-        }
-
-        .p3{
-            font-size: 15px;
-            flex-direction: column;
-            flex-wrap: wrap;
-            width: 400px;
-            position: absolute;
-            top: 250px;
-            right: 200px;
-        }
-
-        .div24{
-            position: relative;
-        }
-
-        .div23{
-           
-        }
-
-        .container4{
-            position: relative;
-        }
-
-        .div25{
-            width: 800px;
-            height: 300px;
-            background-color: aqua;
-            position: absolute;
-            top: 1700px;
-            right: 0px;
-        }
-
-        .div26{
-                width: 900px;
-            height: 500px;
-            background-color: aqua;
-            position: absolute;
-            top: 1450px;
-            left: 0px;
-        }
-        
-    </style>
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="index.css">
+    <!-- --------- FAVICON ---------- -->
+    <title>Dhruv Patel| Portfolio</title>
 </head>
 <body>
-    <div class="container">
-             <div class="div1"><img src="background1.jpg" alt="" width="100%" height="100%"></div>
-             <div class="div2"><img src="background2.jpg" alt="" width="1290px" height="500px"></div>
-             <div class="div3">
-                <div>home</div>
-                <div>Service</div>
-                <div>Our product</div>
-                <div>contact</div>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">DHRUV PATEL</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#internship" class="nav-link">Internship</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Dhruv Patel</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>web Developer with a passion for creating visually stunning
+                   and user-friendly websites.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank"><button class="btn blue-btn">Hire Me</button></a>
+            </div>
+            <div class="social_icons">
+                    <a href="https://www.instagram.com/patel_dhruv_7335?igsh=MXYzN2F0ZWptYzR3MQ==" target="_blank">
+                    <div class="icon"><i class="uil uil-instagram"></i></a>
+                </div>
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div></a>
+                <a href="https://github.com/dhruvpatel8250" target="_blank">
+                <div class="icon"><i class="uil uil-github-alt"></i></div></a>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="avatar.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
+                       frameworks and libraries,which allows me to implement interactive features.
+                    </p>
+                    <div class="about-btn">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>                        
+                        <span>JavaScript</span> 
+                        <span>REACT.JS</span>                                           
+                    </div>
+                </div>
+                <!-- <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>JAVA</span>
+                        <span>Python</span>
+                        <span>C++</span>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-list">
+                            <span>Tableau</span>
+                            <span>Power Bi</span>                                                                   
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                    </div> -->
+                </div>
+            </div>
+          </div>
+       </section>
+       <!-- -------------- PROJECT BOX ---------------- -->
+       <section class="section" id="internship">
+          <div class="top-header">
+              <h1>Internship</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>Completed</h3>
+                <label>1 Finished Internship Projects</label>
+            </div>
+            <div class="project-box">
+                <i class="fas fa-certificate"></i>
+
+                <h3>Certificate's</h3>
+                <label>2 Internship Certificates</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Experience</h3>
+                <label>6 month in the field</label>
+            </div>
+          </div>
+       </section>
+       <!-- -------------- CONTACT BOX ---------------- -->
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: pateldhruvbhai6@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +91 8780377054</p>
+                </div>
              </div>
-             <div class="div4">
-                <div><i class="fa-brands fa-instagram fa"></i></div>
-                <div><i class="fa-brands fa-facebook fa"></i></div>
-                <div><i class="fa-brands fa-twitter fa"></i></div>
-                <div><i class="fa-brands fa-whatsapp fa"></i></div>
-             </div>
-             <div class="div5"><img src="logo.png" alt="" width="150px" height="250px"></div>
-             <div class="div6">Hot drinks</div>
-    </div>
 
-    <div class="container2">
-        <div class="div7"><img src="background1.jpg" alt="" width="350px" height="500px"></div>
-        <div class="div8"></div>
-          <div class="div9"></div>
-        <div class="div10"><img src="ip1.jpg" alt="" width="100%" height="200px"></div>
-        <div class="div11"><img src="ip2.jpg" alt="" width="100%" height="200px"></div>
-        <div class="div12"><img src="ip3.jpg" alt="" width="100%" height="200px"></div>
-        <div class="div13"><img src="ip4.jpg" alt="" width="100%" height="200px"></div>
-        <div class="div14"><img src="ip5.jpg" alt="" width="100%" height="200px"></div>
-        <div class="div15"><img src="ip6.jpg" alt="" width="100%" height="200px"></div>
-        <div class="div16">
-             <h1 class="p1">LOREM IPSUM 1</h1>
-             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+          </div>
+       </section>
+    </main>
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Dhruv Patel .</p>
         </div>
-        <div class="div17">
-             <h1 class="p1">LOREM IPSUM 2</h1>
-             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#internship">Internship</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div class="div18">
-             <h1 class="p1">LOREM IPSUM 3</h1>
-             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        <div class="social_icons">
+            <a href="https://www.instagram.com/patel_dhruv_7335?igsh=MXYzN2F0ZWptYzR3MQ==" target="_blank">
+            <div class="icon"><i class="uil uil-instagram"></i></a>
         </div>
-        <div class="div19">
-             <h1 class="p1">LOREM IPSUM 1</h1>
-             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
-        </div>
-        <div class="div20">
-             <h1 class="p1">LOREM IPSUM 2</h1>
-             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
-        </div>
-        <div class="div21">
-             <h1 class="p1">LOREM IPSUM 3</h1>
-             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
-        </div>
+        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">
+        <div class="icon"><i class="uil uil-linkedin-alt"></i></div></a>
+        <a href="https://github.com/dhruvpatel8250" target="_blank">
+        <div class="icon"><i class="uil uil-github-alt"></i></div></a>
     </div>
-
-    <div class="container3">
-        <div class="div22"><img src="background2.jpg" alt="" width="500px" height="600px"></div>
-        <div class="div23">
-            <div class="div24">
-               <h1 class="p2">SUMMER COFFEE</h1>
-               <h4 class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae officiis facere corrupti consequatur commodi voluptate iure eius minus, vitae, quas sint? Fugiat nemo quaerat debitis, repudiandae quia reiciendis odit.</h4>
-               </div>
-        </div>
+    </footer>
     </div>
-
-    <div class="container4">
-        <div class="div25">
-            <img src="background2.jpg" alt="" width="100%" height="300px">
-        </div>
-        <div class="div26"><img src="Screenshot 2025-06-23 144159.png" alt="" width="100%" height="500px"></div>
-
-    </div>
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="index.js"></script>
 </body>
 </html>
