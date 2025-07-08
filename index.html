@@ -1,181 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
 
+        body{
+            background-color: rgb(54, 52, 52);
+        }
+
+        .container{
+            position: relative;
+        }
+
+        .div1{
+            width: 580px;
+            height: 700px;
+            background-color: rgba(103, 31, 31, 0.49);
+           
+        }
+
+        .div2{
+           
+            position: absolute;
+            top: 160px;
+             left: 225px; 
+        }
+
+        .div3{
+            color: rgb(15, 14, 14);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            font-size: 20px;
+            border: 2px solid white;
+            background-color: rgb(110, 240, 240);
+            height: 40px;
+            width: 100%;
+            position: absolute;
+            top: 70px;
+        }
+
+        .fa{
+            background-color: orangered;
+            border-radius: 10px;
+            color: black;
+            font-size: 20px;
+        }
+
+        .div4{
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            top: 80px;
+            right: 60px;
+        }
+
+        .div5{
+            position: absolute;
+            top: 0px;
+            left: 160px;
+        }
+
+        .div6{
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            top: 730px;
+            left: 730px;
+        }
+
+        .container2{
+            position: relative;
+        }
+
+        .div7{
+            position: absolute;
+            top: 50px;
+            right: 0px;
+        }
+
+        .div8{
+            width: 86%;
+            height: 200px;
+            background-image: url(background2.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+             top: 100px;
+        }
+
+        
+        .div9{
+            width: 86%;
+            height: 200px;
+            background-image: url(background2.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+             top: 430px;
+             right: 0px;
+        }
+
+        .div10{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 120px;
+            left: 300px;
+        }
+
+         .div11{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 120px;
+            left: 700px;
+        }
+
+         .div12{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 120px;
+            right: 200px;
+        }
+
+         .div13{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 460px;
+            left: 300px;
+        }
+
+         .div14{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 460px;
+            left: 700px;
+        }
+
+         .div15{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            top: 460px;
+            right: 200px;
+        }
+
+        .p1{
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 200px;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .div16{
+            position: absolute;
+            top: 330px;
+            left: 300px;
+        }
+
+        .div17{
+            position: absolute;
+            top: 330px;
+            left: 700px;
+        }
+
+        .div18{
+            position: absolute;
+            top: 330px;
+            right: 200px;
+        }
+
+        .div19{
+            position: absolute;
+            top: 678px;
+            left: 300px;
+        }
+
+          .div20{
+            position: absolute;
+            top: 678px;
+            left: 700px;
+        }
+
+        .div21{
+            position: absolute;
+            top: 678px;
+            right: 200px;
+        }
+
+        .container3{
+             position: relative;
+        }
+
+        .div22{
+            position: absolute;
+            top: 810px;
+            right: 150px;
+        }
+
+        .div23{
+            background-image: url(background1.jpg);
+            width: 70%;
+            height: 430px;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 890px;
+        }
+
+        .p2{
+            font-size: 60px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 400px;
+            position: absolute;
+            top: 90px;
+            right: 200px;
+        }
+
+        .p3{
+            font-size: 15px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 400px;
+            position: absolute;
+            top: 250px;
+            right: 200px;
+        }
+
+        .div24{
+            position: relative;
+        }
+
+        .div23{
+           
+        }
+
+        .container4{
+            position: relative;
+        }
+
+        .div25{
+            width: 800px;
+            height: 300px;
+            background-color: aqua;
+            position: absolute;
+            top: 1700px;
+            right: 0px;
+        }
+
+        .div26{
+                width: 900px;
+            height: 500px;
+            background-color: aqua;
+            position: absolute;
+            top: 1450px;
+            left: 0px;
+        }
+        
+    </style>
+</head>
 <body>
-    <!-- header  -->
-    <div class="header">
-        <div class="navbar">
-            <div class="head-nav">
-                <img src="logo.png" alt="" width="80px" height="80px">
-            </div>
-            <ul class="nav-link">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Rewards</a></li>
-                <li><a href="#">Gift Cardss</a></li>
-            </ul>
-            <div class="bp">
-                <p class="pp"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;Find a Store</p>
-                <button class="b1">Sign in</button>
-                <button class="b2">Join Now</button>
-            </div>
+    <div class="container">
+             <div class="div1"><img src="background1.jpg" alt="" width="100%" height="100%"></div>
+             <div class="div2"><img src="background2.jpg" alt="" width="1290px" height="500px"></div>
+             <div class="div3">
+                <div>home</div>
+                <div>Service</div>
+                <div>Our product</div>
+                <div>contact</div>
+             </div>
+             <div class="div4">
+                <div><i class="fa-brands fa-instagram fa"></i></div>
+                <div><i class="fa-brands fa-facebook fa"></i></div>
+                <div><i class="fa-brands fa-twitter fa"></i></div>
+                <div><i class="fa-brands fa-whatsapp fa"></i></div>
+             </div>
+             <div class="div5"><img src="logo.png" alt="" width="150px" height="250px"></div>
+             <div class="div6">Hot drinks</div>
+    </div>
+
+    <div class="container2">
+        <div class="div7"><img src="background1.jpg" alt="" width="350px" height="500px"></div>
+        <div class="div8"></div>
+          <div class="div9"></div>
+        <div class="div10"><img src="ip1.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div11"><img src="ip2.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div12"><img src="ip3.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div13"><img src="ip4.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div14"><img src="ip5.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div15"><img src="ip6.jpg" alt="" width="100%" height="200px"></div>
+        <div class="div16">
+             <h1 class="p1">LOREM IPSUM 1</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        </div>
+        <div class="div17">
+             <h1 class="p1">LOREM IPSUM 2</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        </div>
+        <div class="div18">
+             <h1 class="p1">LOREM IPSUM 3</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        </div>
+        <div class="div19">
+             <h1 class="p1">LOREM IPSUM 1</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        </div>
+        <div class="div20">
+             <h1 class="p1">LOREM IPSUM 2</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
+        </div>
+        <div class="div21">
+             <h1 class="p1">LOREM IPSUM 3</h1>
+             <div class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptas dicta nisi blanditiis maiores quis delectus  </div>
         </div>
     </div>
-    <!-- main  -->
-    <div class="main">
-        <div class="photo-main">
-            <div class="ph-ma">
-                <img src="img1.webp" alt="" width="50%" height="600px">
-                <h1 class="h11">See You On the </h1>
-                <h1 class="h111">Patio</h1>
-                <p class="p1">Soak up the season with Summer-Berry<br> Refreshers® and bursting raspberry-flavored
-                    <br>pearls. Made
-                    for sun and
-                    here for a limited<br> time.
-                </p>
-                <button class="b3">View The Menu</button>
-            </div>
+
+    <div class="container3">
+        <div class="div22"><img src="background2.jpg" alt="" width="500px" height="600px"></div>
+        <div class="div23">
+            <div class="div24">
+               <h1 class="p2">SUMMER COFFEE</h1>
+               <h4 class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestiae officiis facere corrupti consequatur commodi voluptate iure eius minus, vitae, quas sint? Fugiat nemo quaerat debitis, repudiandae quia reiciendis odit.</h4>
+               </div>
         </div>
     </div>
-    <div class="main2">
-        <div class="photo-main2">
-            <div class="ph-ma2">
-                <h1 class="h22">It’s a great day for free coffee</h1>
-                <p class="p2">Start your Starbucks® Rewards journey with a coffee on<br> us. Join now and enjoy a free
-                    handcrafted drink with a <br>qualifying purchase during your first week.*</p>
-                <button class="b4">Join now</button>
-                <div class="ph-m3">
-                    <img src="img2.jpg" alt="" width="720px" height="400px">
-                </div>
-            </div>
+
+    <div class="container4">
+        <div class="div25">
+            <img src="background2.jpg" alt="" width="100%" height="300px">
         </div>
-    </div>
-    <div class="main3">
-        <div class="photo-main3">
-            <div class="ph-ma3">
-                <img src="img3.webp" alt="" width="50%" height="600px">
-                <h1 class="h33">Order ahead. Pick </h1>
-                <h1 class="h333">up and fly.</h1>
-                <p class="p3">Make summer travel more chill with the<br> Starbucks® app. Just find a store at an
-                    airport,<br>
-                    order your favorites, pick up and go.</p>
-                <button class="b5">Find a Store</button>
-            </div>
-        </div>
-    </div>
-    <div class="main4">
-        <div class="photo-main4">
-            <div class="ph-ma4">
-                <h1 class="h44">Nondairy milk, no <br>extra charge</h1>
-                <p class="p4">Customize your drink with your favorite<br> nondairy milk—like soy, coconut, almond or<br>
-                    oat—for no additional charge.</p>
-                <button class="b6">Order now</button>
-                <div class="ph-m4">
-                    <img src="img4.webp" alt="" width="720px" height="400px">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="main5">
-        <div class="photo-main5">
-            <div class="ph-ma5">
-                <img src="img5.jpg" alt="" width="50%" height="600px">
-                <h1 class="h55">FARM Rio +</h1>
-                <h1 class="h555">Starbucks®</h1>
-                <p class="p5">We’ve teamed up with Brazilian fashion<br> brand FARM Rio for an exclusive merch
-                    <br>collection
-                    inspired by the beauty and culture<br> of Rio de Janeiro.
-                </p>
-                <button class="b7">Learn More</button>
-            </div>
-        </div>
-    </div>
-    <!-- footer  -->
-    <div class="footer">
-        <div class="last-footer">
-            <div class="la-foo">
-                <p class="ppp">*Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be
-                    available in the<br>
-                    offers tab of your Starbucks app following sign up and may take up to 48 hours to arrive. Good
-                    at<br>
-                    participating U.S. stores for a handcrafted menu-sized beverage with qualifying purchase ($8 max<br>
-                    value). Qualifying purchase excludes alcohol, Starbucks Card and Card reloads. Limit one. Cannot
-                    be<br>
-                    combined with other offers or discounts. Excludes delivery services. Sign up before 6/29/2025.</p>
-                <div class="div1">
-                    <p class="p7">About Us</p><br><br>
-                    Our Company<br><br>
-                    Our Coffee<br><br>
-                    About Starbucks<br><br>
-                    Starbucks Archive<br><br>
-                    Investor Relations<br><br>
-                    Customer Service<br><br>
-                    Contact Us
-                </div>
-                <div class="div2">
-                    <p class="p7">Careers</p><br><br>
-                    Culture and Values<br><br>
-                    Belonging at Starbucks<br><br>
-                    College Achievement<br> Plan<br><br>
-                    Alumni Community<br><br>
-                    U.S. Careers<br><br>
-                    International Careers<br><br>
-                </div>
-                <div class="div3">
-                    <p class="p7">Social Impact</p><br><br>
-                    Communities<br><br>
-                    Starbucks Foundation<br><br>
-                    Sustainability<br><br>
-                    Environmental and Social<br> Impact Reporting<br><br>
-                </div>
-                <div class="div4">
-                    <p class="p7">For Business Partners</p><br><br>
-                    Landlord Support Center<br><br>
-                    Suppliers<br><br>
-                    Corporate Gift Card Sales<br><br>
-                    Office and Foodservice<br> Coffee
-                </div>
-                <div class="div5">
-                    <p class="p7">Order and Pick Up</p><br><br>
-                    Order on the App<br><br>
-                    Order on the Web<br><br>
-                    Delivery<br><br>
-                    Order and Pick Up<br> Options<br><br>
-                    Explore and Find Coffee for<br> Home<br><br>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer2">
-        <div class="last-footer2">
-            <div class="la-foo2">
-                <p class="p8"><i class="fa-brands fa-spotify"></i></p>
-                <p class="p8"><i class="fa-brands fa-facebook"></i></p>
-                <p class="p8"><i class="fa-brands fa-instagram"></i></p>
-                <p class="p8"><i class="fa-brands fa-youtube"></i></p>
-                <p class="p8"><i class="fa-brands fa-x-twitter"></i></p>
-                <div class="div8">
-                    Privacy Notice<br><br>
-                    Consumer Health Privacy Notice<br><br>
-                    Terms of Use<br><br>
-                    Do Not Share My Personal Information<br><br>
-                    CA Supply Chain Act<br><br>
-                    Accessibility<br><br>
-                    Cookie Preferences<br><br>
-                </div>
-                <p class="p9">© 2025 Starbucks Coffee Company. All rights reserved.</p>
-            </div>
-        </div>
+        <div class="div26"><img src="Screenshot 2025-06-23 144159.png" alt="" width="100%" height="500px"></div>
+
     </div>
 </body>
-
 </html>
